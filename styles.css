@@ -1,0 +1,155 @@
+:root {
+  /*Colors*/
+  --darkest: #20476b;
+  --darker: #2a5c91;
+  --dark: #3674b5;
+  --medium: #578fca;
+  --med-light: #7fc0e4;
+  --light: #a1e3f9;
+  --lightest: #d1f8ef;
+}
+
+body {
+  background-color: var(--darkest);
+  color: var(--dark);
+  font-family: Arial, sans-serif;
+  font-size: large;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*sm (640px) */
+@media (min-width: 640px) and (max-width: 767px) {
+  body {
+    max-width: 640px;
+  }
+}
+
+/*md (768px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    max-width: 768px;
+  }
+}
+
+/*lg (1024px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  body {
+    max-width: 1024px;
+  }
+}
+
+/*xl (1280px) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  body {
+    max-width: 1280px;
+  }
+}
+
+/*2xl (1536px) */
+@media (min-width: 1536px) {
+  body {
+    max-width: 1536px;
+  }
+}
+
+.headerbar {
+  background-color: white;
+}
+
+nav {
+  background-color: var(--light);
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  white-space: nowrap;
+  justify-content: center;
+}
+
+.bg-color-silver {
+  background-color: var(--lightest);
+}
+
+nav a {
+  color: var(--dark);
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+  padding: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  background-color: white;
+  padding: 48px 24px 48px 24px;
+}
+
+main img {
+  max-width: 650px;
+}
+
+h1 {
+  color: var(--dark);
+  text-align: center;
+}
+
+h2 {
+  color: var(--darker);
+  font-size: large;
+}
+
+footer {
+  background-color: var(--lightest);
+  padding: 16px;
+  color: var(--dark);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer a {
+  color: var(--darkest);
+}
+
+.home-card-link {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.home-card {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  width: 400px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.home-card img {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.home-card h2 {
+  padding-left: 24px;
+  font-size: larger;
+}
+
+.home-card-description {
+  padding: 0px 8px 8px 8px;
+}
+
+.accommodations-subject {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+}
